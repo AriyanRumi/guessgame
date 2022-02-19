@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Lato:ital,wght@0,300;0,700;1,300&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- javascript simple game -->
+
+    <div class="wrapper">
+    
+        
+    <div id="clickPage" class="gameHomePage">
+
+
+        <div id="secOne" class="sectionOne">
+            <div class="startMenu">
+                <h3>Guess The Random Number Between 1-100</h3>
+                <div class="bannerImg">
+                    <img src="game.png" alt="">
+                </div>
+                <h4>Select The Defficulity</h4>
+                <div class="button">
+                    <button id="btn1" class="btn1">Easy: 10 Attempt</button><br>
+                    <button id="btn2" class="btn2">Hard: 5 Attempt</button>
+                </div>
+            </div>
+    
+        </div>
+
+        <!-- attempt 10 -->
+        <div id="secTwo" class="sectionTwo">
+        <div class="score">
+            <span>Score: <span id="score"> </span></span>
+        </div>
+        <button id="newGame">New Game</button>
+       <h2 id="alertHeader">Your Guess</h2>
+        <input id="ginput" min="1" max="100" onchange="getNumber()" type="number" placeholder="Enter Your Guess" >
+        <div class="result">
+        <p>Number of previous attempts</p>
+        <span id="pa">0 </span>
+        <p>Number of previous guesses</p>
+        <span id="pg">-</span>
+        </div>
+
+        <button id="back">Back</button>
+
+        </div>
+
+
+        <div id="winAlert" class="winAlert">
+            <div class="congrat">
+                 <button id="conBtn">Close</button>
+                    <h2>Congratulation</h2>
+                 <h3>You Got <span id="congrat"></span> score</h3>
+
+                 <img id="winImage" src="win.gif" alt="">
+
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+<audio id="audioOne" src="hover.wav"></audio>
+<audio id="audioTwo" src="click.wav"></audio>
+<audio id="audioThree" src="error.wav"></audio>
+<audio id="audioFoure" src="win.wav"></audio>
+
+
+<script src="index.js"></script>
+</body>
+</html>

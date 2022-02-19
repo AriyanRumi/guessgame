@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bannerImg img{
+    width:250px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c5ce7;
+}
+
+.gameHomePage{
+    width:350px;
+    height: 500px;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 30px;
+    box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.1);
+    position: relative;
+    word-wrap: break-word;
+  
+}
+
+.btn1{
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient( 92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+
+.btn2{
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    background:linear-gradient(to right,#6c5ce7,cyan) ;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s linear;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn1:hover{
+    transform: scale(0.9);
+}
+
+.btn2:hover{
+    transform: scale(0.9);
+}
+
+
+.sectionTwo{
+    opacity:0;
+    pointer-events: none;
+    position: absolute;
+    top: 50px;
+    left: 40px!important;
+    transition: all .3s;
+    word-wrap: break-word;
+}
+
+.sectionTwo .score{
+    position: absolute;
+    top:-40px;
+    left:-20px;
+    font-weight: bold;
+}
+
+.block1{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+
+.block2{
+    opacity:0;
+    pointer-events: none;
+}
+
+.sectionTwo input{
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.sectionTwo input:focus{
+    border: 1px solid #5643cc;
+}
+
+
+.sectionTwo h2{
+    margin-bottom: 30px;
+}
+
+.sectionTwo p{
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#back{
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    background:linear-gradient(to right,#6c5ce7,#a29bfe) ;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+#newGame{
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    background:linear-gradient(to right,#6c5ce7,#a29bfe) ;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    
+}
+
+
+#pa{
+    color: red;
+    font-size: 20px;
+}
+
+#pg{
+    color: red;
+    font-size: 20px;
+}
+
+#score{
+    color: red;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+@media all and (max-width:370px){
+    .sectionTwo p{
+        font-size: 15px;
+    }
+
+    .sectionTwo{
+        left: 30px!important;
+    }
+
+    .sectionTwo h2{
+        font-size: 17px;
+    }
+
+
+}
+
+/* congratulation page */
+
+.winAlert{
+    position: absolute;
+    top: 0;
+    background-color: #5643cc;
+    width:300px;
+    color:white;
+    height: 100px;
+    margin-top: 100px;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.alertActive{
+    height: 300px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.congrat{
+    margin-top: 30px;
+}
+#congrat{
+    color: yellow;
+    font-size: 18px;
+}
+
+
+.congrat button{
+    padding: 9px 20px;
+    border: none;
+    outline: none;
+    background:linear-gradient(to right,#6c5ce7,#a29bfe) ;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;    
+}
+
+#winImage{
+    width:200px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 15px;
+    border-radius: 20px;
+}
